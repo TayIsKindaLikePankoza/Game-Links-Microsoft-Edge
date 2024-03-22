@@ -1,0 +1,145 @@
+﻿
+<html>
+
+<head>
+	<title>Moonsters</title>
+	
+	<meta name="Description" content="Online puzzle game. Connect 3 or more Moonsters into a line to attack the enemy." />
+	<meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+	
+	
+	<link rel="icon" sizes="256x256" href="promo/thumb256.png">
+	<link rel="image_src"  type="image/png"  href="promo/thumb256.png" />
+	
+	<style type="text/css" media="screen">
+	body{
+		color: #ffffff;
+		margin:0px; 
+		background-color:#000000;
+		font-family: Trebuchet MS, Arial;
+		overflow:hidden;
+	}
+	.big {
+		font-size:16px;
+	}
+	a {
+		color: #ffffff;
+		font-weight: bold;
+	}
+	.gbox{
+		position:absolute;
+		background-color: rgba(0, 0, 0, 0.5);
+		border-radius: 10px;
+		margin:0px;
+		padding:6px 8px;
+		text-align:right;
+	}
+	
+	.share{
+		top:10px;
+		right:10px;
+	}
+	
+	.gplus div{
+		display:inline;
+		width:86px !important;
+		clear: both;
+	}
+	
+	.game{
+		width:100%;
+		height: 100%;
+		border: none;
+	}
+	
+	.cont {
+		position: fixed;
+		left: 0;
+		right:0;
+		top: 60px;
+		width: auto;
+		height: auto;
+		bottom: 90px;
+	}
+	
+	.ad {
+		position:absolute;
+		width:100%;
+		text-align:center;
+		bottom:0px;
+		left:0px;
+	}
+	
+	</style>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-4249565-42', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	
+	
+	<script type="text/javascript">
+	function smallWindow(url)
+	{
+		var w = 640, h = 300;
+		window.open(url, "Share", "width="+w+",height="+h+",left="+Math.floor((window.innerWidth-w)/2)+",top="+Math.floor((window.innerHeight-h)/2));
+	}
+	function makeFullscreen(id)
+	{
+		var el = document.getElementById('game');
+		if		(el.requestFullScreen      ) el.requestFullScreen();
+		else if	(el.webkitRequestFullScreen) el.webkitRequestFullScreen();
+		else if	(el.mozRequestFullScreen   ) el.mozRequestFullScreen();
+	}
+	
+	</script>
+</head>
+
+
+<body>
+
+	<div style="display:inline;"><a style="float:right; padding:0.6em; width:2.6em; height:2.6em; cursor:pointer;  background-color:#ffffff" onclick="makeFullscreen('game');">
+			<img style="width:100%; height:100%"src="//www.ivank.net/global/fullscreen.png" /></a></div>
+	
+	<div class="cont">
+		<iframe src="app13/index.html" class="game" id="game"></iframe>
+	</div>
+	
+	<div style="width:580px; height:60px; margin:0px auto;">
+		
+		<div style="display:inline">
+			<a href="#" title="Share on Facebook"    onclick="smallWindow('//www.facebook.com/share.php?u=//moonsters.ivank.net');"><img src="//www.ivank.net/global/fb.png" /></a>
+			<a href="#" title="Share on Twitter"     onclick="smallWindow('//twitter.com/share?url=//moonsters.ivank.net');"><img src="//www.ivank.net/global/tw.png" /></a>
+		</div>
+		
+		<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmoonsters.ivank.net&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=true&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=441345579221440" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:21px; display:inline;" allowTransparency="true"></iframe>
+		
+		
+		<a href="//connection.ivank.net" target="_new">Play "Connection"</a>
+	</div>
+	
+	
+
+	<div class="ad">
+		<script type="text/javascript">
+			google_ad_client = "ca-pub-0885095539348241";
+			google_ad_slot = "4351484930";
+			google_ad_width = 728;
+			google_ad_height = 90;
+		</script>
+		<!-- Moonsters main -->
+		<script type="text/javascript"
+		src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+		</script>
+	</div>
+	
+	
+</body>
+
+</html>
