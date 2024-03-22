@@ -1,3 +1,2 @@
-# LDPlayer-Full-Download
-This is used for downloading
-LDPlayer a diffrent way. 
+# Games
+Use the links for games!
